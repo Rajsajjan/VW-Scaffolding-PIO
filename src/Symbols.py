@@ -1,46 +1,14 @@
-# Symbol name# Symbol names used by the Scaffolding Plug-in
+"""
+Layher Symbol Library
+Vectorworks Scaffolding PIO
+"""
 
-import vs
+BASE_COLLAR = "Layher TR Base Collar"
 
+ADJUSTABLE_BASE = "Layher ZB Adjustiable Base 20"
 
-class Symbols:
-    FRAME = "Scaffold_Frame"
-    BASE_JACK = "Scaffold_Base_Jack"
-    LEDGER = "Scaffold_Ledger"
-    TRANSOM = "Scaffold_Transom"
+STANDARD_200 = "Layher AR Standerd LW 2.00M"
 
-    STANDARD = "Scaffold_Standard"
-    BRACE_DIAGONAL = "Scaffold_Diagonal_Brace"
+LEDGER_207 = "Layher ARM O-Ledger LW 2.07M"
 
-    DECK = "Scaffold_Deck"
-    TOE_BOARD = "Scaffold_Toe_Board"
-
-    GUARDRAIL = "Scaffold_Guardrail"
-    MIDRAIL = "Scaffold_Midrail"
-    KICKBOARD = "Scaffold_Kickboard"
-
-    LADDER = "Scaffold_Ladder"
-    STAIR = "Scaffold_Stair"
-
-    @staticmethod
-    def list_all():
-        return [
-            Symbols.FRAME,
-            Symbols.BASE_JACK,
-            Symbols.LEDGER,
-            Symbols.TRANSOM,
-            Symbols.STANDARD,
-            Symbols.BRACE_DIAGONAL,
-            Symbols.DECK,
-            Symbols.TOE_BOARD,
-            Symbols.GUARDRAIL,
-            Symbols.MIDRAIL,
-            Symbols.KICKBOARD,
-            Symbols.LADDER,
-            Symbols.STAIR,
-        ]
-
-    @staticmethod
-    def exists(symbol_name):
-        h = vs.GetObject(symbol_name)
-        return h is not Nones used by the Scaffolding Plug-in
+DIAGONAL_207 = "Layher ARM Diagonal LW 2.07M"
