@@ -1,14 +1,50 @@
 # ==========================================
-# Symbol Library
-# Layher Scaffolding Symbols
+# Layher Scaffolding Symbol Library
 # ==========================================
 
-STANDARDS = {}
+# ---------- Standards ----------
 
-LEDGERS = {}
+STANDARDS = {
 
-DIAGONALS = {}
+    "0.50M": "",
+    "1.00M": "",
+    "1.50M": "",
+    "2.00M": "",
+    "2.50M": "",
+    "3.00M": "",
+    "4.00M": "",
 
-DECKS = {}
+}
 
-BRACES = {}
+# ---------- Ledgers ----------
+
+LEDGERS = {
+
+    "0.50M": "",
+    "0.73M": "",
+    "1.09M": "",
+    "1.40M": "",
+    "1.57M": "",
+    "2.00M": "",
+    "2.57M": "",
+    "3.07M": "",
+
+}
+
+# ---------- Diagonals ----------
+
+DIAGONALS = {
+
+}
+
+# ---------- Decks ----------
+
+DECKS = {
+
+}
+
+# ---------- Braces ----------
+
+BRACES = {
+
+}
