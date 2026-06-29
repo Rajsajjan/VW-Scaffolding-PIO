@@ -8,10 +8,16 @@ def place_symbol(symbol_name, x, y):
         vs.AlrtDialog("Symbol not found: " + symbol_name)
 
 def main():
+    # Read Plug-in Parameters
+bays_x = int(vs.PBaysX)
+bays_y = int(vs.PBaysY)
 
     # Read Plug-in Parameters
-    bays_x = int(vs.PBaySX)
-    bays_y = int(vs.PBaySY)
+    standard_choice = vs.PStandardType
+    ledger_choice = vs.PLedgerType
+    
+    standard_symbol = STANDARDS[standard_choice]
+    ledger_symbol = LEDGERS[ledger_choice]
 
     bay_length = vs.PBayLength
     bay_width = vs.PBayWidth
@@ -25,5 +31,5 @@ def main():
 
             place_symbol("Layher ZB Adjustiable Base 20", x, y)
             place_symbol("Layher TR Base Collar", x, y)
-
-main() Scaffolding Plug-in
+            place_symbol(standard_symbol, x, y)
+            main() 
