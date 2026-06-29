@@ -1,4 +1,5 @@
 import vs
+from SymbolLibrary import STANDARDS, LEDGERS
 
 def place_symbol(symbol_name, x, y):
     if vs.GetObject(symbol_name):
