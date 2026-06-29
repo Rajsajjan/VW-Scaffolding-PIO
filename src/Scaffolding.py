@@ -7,6 +7,10 @@ def place_symbol(symbol_name, x, y):
     else:
         vs.AlrtDialog("Symbol not found: " + symbol_name)
 
+def place_ledger(symbol_name, x, y, rotation):
+    if vs.GetObject(symbol_name):
+        vs.Symbol(symbol_name, x, y, rotation)
+
 def main():
     # Read Plug-in Parameters
 bays_x = int(vs.PBaysX)
@@ -32,4 +36,13 @@ bays_y = int(vs.PBaysY)
             place_symbol("Layher ZB Adjustiable Base 20", x, y)
             place_symbol("Layher TR Base Collar", x, y)
             place_symbol(standard_symbol, x, y)
-            main() 
+
+           # X Direction
+           if ix < bays_x:
+               place_ledger(ledger_symbol, x, y + 190, 0)
+
+           # Y Direction
+           if iy < bays_y:
+               place_ledger(ledger_symbol, x, y + 190, 90)
+               
+main() 
